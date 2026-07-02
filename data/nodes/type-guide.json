@@ -1,0 +1,67 @@
+{
+  "id": "10000000-0000-4000-8000-000000000003",
+  "type": "guide",
+  "title": "Guide — a how-to",
+  "tags": [
+    "example",
+    "howto"
+  ],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      {
+        "id": "h",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "heading",
+            "level": 2,
+            "text": "Deploy in three steps"
+          }
+        }
+      },
+      {
+        "id": "steps",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "list",
+            "style": "numbered",
+            "items": [
+              "Build the app",
+              "Run the migrations",
+              "Flip the traffic"
+            ]
+          }
+        }
+      },
+      {
+        "id": "code",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "code",
+            "language": "bash",
+            "text": "npm run build && npm run migrate && npm run switch"
+          }
+        }
+      },
+      {
+        "id": "warn",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "callout",
+            "style": "warning",
+            "text": "Take a backup before running migrations."
+          }
+        }
+      }
+    ]
+  }
+}

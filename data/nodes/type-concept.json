@@ -1,0 +1,60 @@
+{
+  "id": "10000000-0000-4000-8000-000000000004",
+  "type": "concept",
+  "title": "Concept — an idea explained",
+  "tags": [
+    "example",
+    "glossary"
+  ],
+  "links": [
+    "10000000-0000-4000-8000-000000000005"
+  ],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      {
+        "id": "p",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "paragraph",
+            "text": "A **concept** is an atomic, heavily-linked note. It points at the [[10000000-0000-4000-8000-000000000005|Reference example]] to show wiki-links and backlinks."
+          }
+        }
+      },
+      {
+        "id": "q",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "quote",
+            "text": "Atomic notes compound over time."
+          }
+        }
+      },
+      {
+        "id": "d",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "divider"
+          }
+        }
+      },
+      {
+        "id": "p2",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "paragraph",
+            "text": "The link icon beside the title opens this node's outbound links."
+          }
+        }
+      }
+    ]
+  }
+}

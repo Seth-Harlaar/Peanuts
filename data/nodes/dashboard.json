@@ -1,0 +1,157 @@
+{
+  "id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+  "type": "reference",
+  "title": "Project Dashboard",
+  "tags": [
+    "example",
+    "grid",
+    "dashboard"
+  ],
+  "links": [],
+  "created": "2026-07-02T09:00:00Z",
+  "updated": "2026-07-02T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "grid",
+    "columns": 12,
+    "gap": 16,
+    "items": [
+      {
+        "id": "title",
+        "placement": {
+          "colStart": 1,
+          "colSpan": 12,
+          "rowStart": 1
+        },
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "heading",
+            "level": 1,
+            "text": "Project Dashboard"
+          }
+        }
+      },
+      {
+        "id": "intro",
+        "placement": {
+          "colStart": 1,
+          "colSpan": 12,
+          "rowStart": 2
+        },
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "callout",
+            "style": "info",
+            "text": "A complex grid: a tall table on the left, two stacked node previews on the right, then two side-by-side items below. Resize the window to watch it reflow (large → medium halves → small stacks)."
+          }
+        }
+      },
+      {
+        "id": "metrics",
+        "placement": {
+          "colStart": 1,
+          "colSpan": 8,
+          "rowStart": 3,
+          "rowSpan": 2
+        },
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "svc",
+                "label": "Service",
+                "type": "text"
+              },
+              {
+                "id": "rps",
+                "label": "Req/s",
+                "type": "number"
+              },
+              {
+                "id": "ok",
+                "label": "Healthy",
+                "type": "checkbox"
+              }
+            ],
+            "rows": [
+              {
+                "svc": "api",
+                "rps": 1200,
+                "ok": true
+              },
+              {
+                "svc": "worker",
+                "rps": 340,
+                "ok": true
+              },
+              {
+                "svc": "search",
+                "rps": 90,
+                "ok": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "status",
+        "placement": {
+          "colStart": 9,
+          "colSpan": 4,
+          "rowStart": 3
+        },
+        "content": {
+          "kind": "node",
+          "nodeId": "20000000-0000-4000-8000-000000000001"
+        }
+      },
+      {
+        "id": "links",
+        "placement": {
+          "colStart": 9,
+          "colSpan": 4,
+          "rowStart": 4
+        },
+        "content": {
+          "kind": "node",
+          "nodeId": "20000000-0000-4000-8000-000000000002"
+        }
+      },
+      {
+        "id": "snippet",
+        "placement": {
+          "colStart": 1,
+          "colSpan": 6,
+          "rowStart": 5
+        },
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "code",
+            "language": "bash",
+            "text": "kubectl get pods -n prod | grep -v Running"
+          }
+        }
+      },
+      {
+        "id": "note",
+        "placement": {
+          "colStart": 7,
+          "colSpan": 6,
+          "rowStart": 5
+        },
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "paragraph",
+            "text": "Deep dives: the [[10000000-0000-4000-8000-000000000003|Guide]] and the [[10000000-0000-4000-8000-000000000005|Reference]]. The two cards above are **child nodes** shown as previews."
+          }
+        }
+      }
+    ]
+  }
+}

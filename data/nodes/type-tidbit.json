@@ -1,0 +1,40 @@
+{
+  "id": "10000000-0000-4000-8000-000000000001",
+  "type": "tidbit",
+  "title": "Tidbit — quick note",
+  "tags": [
+    "example",
+    "tidbit"
+  ],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      {
+        "id": "p",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "paragraph",
+            "text": "A **tidbit** is a one-off fact, low ceremony. Inline `code`, *italics*, and **bold** all work."
+          }
+        }
+      },
+      {
+        "id": "c",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "callout",
+            "style": "info",
+            "text": "Good for TIL-style notes you don't want to lose."
+          }
+        }
+      }
+    ]
+  }
+}

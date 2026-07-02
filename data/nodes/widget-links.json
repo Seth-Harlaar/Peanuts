@@ -1,0 +1,28 @@
+{
+  "id": "20000000-0000-4000-8000-000000000002",
+  "type": "resource",
+  "title": "Handy link",
+  "tags": ["reading"],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      {
+        "id": "bm",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "bookmark",
+            "url": "https://example.com/runbook",
+            "title": "On-call runbook",
+            "note": "The steps for the 2am page."
+          }
+        }
+      }
+    ]
+  }
+}

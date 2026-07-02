@@ -1,0 +1,14 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+// Relative base so it works both on a local preview and on a GitHub Pages
+// project sub-path without further configuration.
+export default defineConfig({
+  base: "./",
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: ["./src/test/setup.ts"],
+  },
+});

@@ -1,0 +1,17 @@
+{
+  "id": "20000000-0000-4000-8000-000000000001",
+  "type": "other",
+  "title": "Release checklist",
+  "tags": ["status"],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "ck", "content": { "kind": "block", "block": { "type": "checklist", "items": [{ "text": "Tests green", "checked": true }, { "text": "Changelog written", "checked": true }, { "text": "Tagged release", "checked": false }] } } }
+    ]
+  }
+}

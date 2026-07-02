@@ -1,0 +1,20 @@
+{
+  "id": "10000000-0000-4000-8000-000000000007",
+  "type": "other",
+  "title": "Other — the remaining blocks",
+  "tags": ["example", "blocks"],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "h", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Checklist" } } },
+      { "id": "ck", "content": { "kind": "block", "block": { "type": "checklist", "items": [{ "text": "Covered paragraph, heading, code, list", "checked": true }, { "text": "Covered quote, callout, divider, table", "checked": true }, { "text": "Covered bookmark, checklist, file, image", "checked": true }] } } },
+      { "id": "f", "content": { "kind": "block", "block": { "type": "file", "filename": "spec.pdf", "path": "/data/files/spec.pdf", "mimeType": "application/pdf", "size": 240000 } } },
+      { "id": "img", "content": { "kind": "block", "block": { "type": "image", "path": "https://placehold.co/600x200?text=Image+block", "caption": "An image block with a caption", "alt": "placeholder" } } }
+    ]
+  }
+}

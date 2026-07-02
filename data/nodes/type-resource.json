@@ -1,0 +1,42 @@
+{
+  "id": "10000000-0000-4000-8000-000000000006",
+  "type": "resource",
+  "title": "Resource — a saved link",
+  "tags": [
+    "example",
+    "reading"
+  ],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      {
+        "id": "bm",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "bookmark",
+            "url": "https://example.com/great-article",
+            "title": "A great article",
+            "note": "Why I saved it: the mental model in section 3 finally made this click.",
+            "excerpt": "The trick is to separate the what from the how..."
+          }
+        }
+      },
+      {
+        "id": "p",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "paragraph",
+            "text": "A resource is a link/book/video plus your own notes on it."
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "10000000-0000-4000-8000-000000000005",
+  "type": "reference",
+  "title": "Reference — a lookup table",
+  "tags": ["example", "reference"],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "p", "content": { "kind": "block", "block": { "type": "paragraph", "text": "Dense material for scanning. Column types drive how each cell renders." } } },
+      {
+        "id": "t",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "table",
+            "columns": [
+              { "id": "cmd", "label": "Command", "type": "text" },
+              { "id": "calls", "label": "Calls/day", "type": "number" },
+              { "id": "safe", "label": "Idempotent", "type": "checkbox" }
+            ],
+            "rows": [
+              { "cmd": "GET /widgets", "calls": 4200, "safe": true },
+              { "cmd": "POST /widgets", "calls": 130, "safe": false },
+              { "cmd": "DELETE /widgets/:id", "calls": 12, "safe": false }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

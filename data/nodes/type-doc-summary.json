@@ -1,0 +1,56 @@
+{
+  "id": "10000000-0000-4000-8000-000000000002",
+  "type": "doc-summary",
+  "title": "Doc summary — condensed docs",
+  "tags": [
+    "example",
+    "docs"
+  ],
+  "links": [],
+  "created": "2026-07-01T09:00:00Z",
+  "updated": "2026-07-01T09:00:00Z",
+  "source": "https://example.com/docs/widgets",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      {
+        "id": "h",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "heading",
+            "level": 2,
+            "text": "Key points"
+          }
+        }
+      },
+      {
+        "id": "p",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "paragraph",
+            "text": "A condensed version of external documentation, with the `source` field pointing back to the original."
+          }
+        }
+      },
+      {
+        "id": "l",
+        "content": {
+          "kind": "block",
+          "block": {
+            "type": "list",
+            "style": "bullet",
+            "items": [
+              "Widgets are created with `new Widget()`",
+              "Call `.render()` to mount",
+              "Dispose with `.destroy()`"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
