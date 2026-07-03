@@ -472,3 +472,60 @@ blockquote {
   color: #b91c1c;
   font-style: italic;
 }
+
+/* Sidebar auth control (Supabase mode only) */
+.auth {
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.auth__user {
+  font-size: 0.8rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.auth__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+}
+.auth__btn:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+.auth__btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.auth__btn--ghost {
+  border-color: transparent;
+  color: var(--muted);
+}
+.auth--form input {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--fg);
+}
+.auth__actions {
+  display: flex;
+  gap: 0.4rem;
+}
+.auth__error {
+  color: #b91c1c;
+  font-size: 0.8rem;
+  margin: 0;
+}
