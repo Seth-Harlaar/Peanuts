@@ -1,0 +1,26 @@
+{
+  "id": "0c966ab1-270a-46b8-8e29-a8ffd357df59",
+  "type": "reference",
+  "title": "DataTables Migration 1.x → 2.x",
+  "tags": ["datatables", "javascript", "migration"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Table title" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["use `<caption>` element for table header now instead of table row and th", "  causes too much headache in 2.x, workarounds are too janky"] } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Length Menu" } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "paragraph", "text": "DT 1.x" } } },
+      { "id": "b5", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "$('#myTable_length').appendTo(\"#DtLengthMenu\");" } } },
+      { "id": "b6", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["no longer works"] } } },
+      { "id": "b7", "content": { "kind": "block", "block": { "type": "paragraph", "text": "DT 2.x" } } },
+      { "id": "b8", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "$('.dt-length').appendTo(\"#DtLengthMenu\");" } } },
+      { "id": "b9", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["have to change language of length menu"] } } },
+      { "id": "b10", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "language: {\n    infoFiltered: \"\",\n    emptyTable: \"No data available in table\",\n    zeroRecords: \"No data available in table\",\n    lengthMenu: \"Show _MENU_ entries\"\n}," } } }
+    ]
+  }
+}

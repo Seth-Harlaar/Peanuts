@@ -1,0 +1,18 @@
+{
+  "id": "a0ec16bf-5cf3-41df-87e9-df0defd7560e",
+  "type": "tidbit",
+  "title": "jQuery UI",
+  "tags": ["jquery-ui", "javascript", "tooltips"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "tooltips" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["`.tooltip()` of any kind will not work if the element does not have a title attribute"] } } }
+    ]
+  }
+}

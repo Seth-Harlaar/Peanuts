@@ -1,0 +1,17 @@
+{
+  "id": "5df933a9-8ef5-47e8-9f24-0b3850f400e2",
+  "type": "tidbit",
+  "title": "Mobile",
+  "tags": ["mobile", "chrome", "browser"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["Type in `javascript:location.reload(true)` into the chrome mobile browser to perform a hard reload of the page"] } } }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dfe3ae54-5c76-4cd1-9769-65cca5d44679",
+  "type": "guide",
+  "title": "ASPX to MVC",
+  "tags": ["aspx", "mvc", "migration", "viewmodels"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 2, "text": "Instructions for Claude" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "View Models" } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["Create viewmodels if there are 2/3+ sets of information required", "  For edit endpoints, create a get required info function that can be used to refetch all the data that is required for displaying the form (do not overwrite form data with this function)", "    When an error is reached, refetch all the data with this", "  Also for edit VMs - use an object of the actual class itself to hold the edit data, do not replicate every field of the object being edited/created in the viewmodel, unless necessary for certain data types like DateTimes", "  otherwise just grab the info in the controller itself"] } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Controllers" } } },
+      { "id": "b5", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["Controller endpoints follow this general pattern:", "  Gather info required for auth", "  check auth", "  gather required info", "  return view", "Each endpoint should have a comment on it, just make it a simple sentence with a brief explanation of what this endpoint is for"] } } },
+      { "id": "b6", "content": { "kind": "block", "block": { "type": "heading", "level": 1, "text": "Updating Rewards to MVC steps" } } },
+      { "id": "b7", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["add register routes function to Global.asax", "converted UI controls to shared views", "conceptually organize all files into areas/controllers", "Going one controller at a time, ", "  replicate the file with mvc", "  remove the original"] } } }
+    ]
+  }
+}

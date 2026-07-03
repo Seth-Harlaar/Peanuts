@@ -1,0 +1,18 @@
+{
+  "id": "3dbb4b01-9b17-4eba-bc88-082895fabd7e",
+  "type": "tidbit",
+  "title": "Dapper",
+  "tags": ["dapper", "sql", "orm"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Multi mapping" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["when using multimapping and splitting on a column, make sure the put all the columns in order in the query string", "  everything before the split will be applied to the first, everything after the split column will be applied to the second object"] } } }
+    ]
+  }
+}

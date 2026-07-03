@@ -1,0 +1,23 @@
+{
+  "id": "354a62a9-eec4-429d-8420-56e30850f66a",
+  "type": "reference",
+  "title": "NuGet",
+  "tags": ["nuget", "dotnet", "azure-artifacts"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "paragraph", "text": "Release to local nuget source:" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "code", "language": "bash", "text": "dotnet pack --configuration Release -o \"C:\\code_other\\NugetPackages\"" } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "paragraph", "text": "test" } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "paragraph", "text": "push to /maple-pckg" } } },
+      { "id": "b5", "content": { "kind": "block", "block": { "type": "paragraph", "text": "auto build and push to azure artifacts" } } },
+      { "id": "b6", "content": { "kind": "block", "block": { "type": "paragraph", "text": "may have to do this to get the most recent information from remote sources" } } },
+      { "id": "b7", "content": { "kind": "block", "block": { "type": "code", "language": "bash", "text": "dotnet nuget locals all --clear" } } }
+    ]
+  }
+}

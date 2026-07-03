@@ -1,0 +1,20 @@
+{
+  "id": "f7af2943-8dc4-4f61-983d-74821c5488bd",
+  "type": "reference",
+  "title": "CSS",
+  "tags": ["css", "flexbox", "layout"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Flex" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["flex grow/shrink have no effect if flex-basis is not set", "use flex: flex_grow flex_shrink flex_basis when using flex - how to calculate dimensions of flex items:", "  **Determine Remaining Space**:", "    Add up the `flex-basis` values of all the flex items.", "    Subtract this total from the container's width to determine the remaining space.", "  **Distribute Remaining Space**:", "    The remaining space is distributed proportionally according to the `flex-grow` values of the items."] } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["filters create a new stacking context", "use 'color-scheme: dark' to set the color of scrollbars"] } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["`display: contents` will make a parents children 'break out' of the parent element and behave as children of the grandparent element"] } } }
+    ]
+  }
+}

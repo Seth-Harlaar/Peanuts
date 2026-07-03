@@ -1,0 +1,21 @@
+{
+  "id": "2edf75b0-d2eb-46a1-82f0-64113833c252",
+  "type": "reference",
+  "title": "jQuery",
+  "tags": ["jquery", "javascript"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "functions" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "map()" } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["doesn't support arrow functions", "use $(this) inside input function to get jquery reference to currently iterated element", "use .get() to convert to regular array after mapping", "ex:"] } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "var indices = checkRows.map(function () {\n\treturn $(this).data('index');\n}).get();" } } },
+      { "id": "b5", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["jquery always views an `<option>` element (child of `<select>`) as hidden", "  `$(\"#select-x option\").is(\":hidden\")` will always be true"] } } }
+    ]
+  }
+}

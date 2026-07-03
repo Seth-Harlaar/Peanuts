@@ -1,0 +1,27 @@
+{
+  "id": "3cb8cd2b-2ac7-4676-ae73-77240d1387ba",
+  "type": "reference",
+  "title": "SQL Server",
+  "tags": ["sql", "sql-server", "ssms", "joins"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Add column to table" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "code", "language": "sql", "text": "ALTER TABLE YourTableName\nADD NewColumnName NVARCHAR(255) NULL" } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "code", "language": "sql", "text": "ALTER TABLE TableName\nALTER COLUMN ColumnName NewDataType;" } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "code", "language": "sql", "text": "EXEC sp_rename 'TableName.OldColumnName', 'NewColumnName', 'COLUMN';" } } },
+      { "id": "b5", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "variable types" } } },
+      { "id": "b6", "content": { "kind": "block", "block": { "type": "table", "columns": [ { "id": "c1", "label": "c#", "type": "text" }, { "id": "c2", "label": "SSMS", "type": "text" }, { "id": "c3", "label": "", "type": "text" }, { "id": "c4", "label": "Typical Values", "type": "text" } ], "rows": [ { "c1": "TimeSpan", "c2": "time", "c3": "", "c4": "" }, { "c1": "DateTIme", "c2": "date (digit)", "c3": "digit -> fractional seconds precision", "c4": "9" }, { "c1": "decimal", "c2": "decimal(digit1,digit2)", "c3": "digit1 -> precision - # of digits stored<br>digits2 -> scale - # of digits after the decimal point", "c4": "digit1 -> 18<br>digit2 -> 2" }, { "c1": "string", "c2": "VarChar(n)", "c3": "n -> # of characters to allow", "c4": "" }, { "c1": "bool", "c2": "bit", "c3": "", "c4": "" } ] } } },
+      { "id": "b7", "content": { "kind": "block", "block": { "type": "heading", "level": 2, "text": "Joins" } } },
+      { "id": "b8", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["you can join two tables and then filter on the joined table"] } } },
+      { "id": "b9", "content": { "kind": "block", "block": { "type": "code", "language": "sql", "text": "SELECT vendor_contacts.*, vendors.companyname, administrators.fullname as modified_by_fullname \nFROM vendor_contacts\n\tINNER JOIN vendors ON (vendors.id = vendor_contacts.vendor AND vendors.deleted = 0)\n\tLEFT JOIN administrators ON (LOWER(administrators.username) = LOWER(vendor_contacts.modified_by) )\nWHERE 1=1  AND vendor_contacts.deleted = 0  AND vendor_contacts.vendor\n\n/* filter on joined table */\nand vendors.IsBDCompany = 2" } } },
+      { "id": "b10", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Query Editor" } } },
+      { "id": "b11", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["to compare dates: just put in a string 'yyyy-mm-dd'"] } } }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "70343488-62ef-406b-8d35-3a3d1b62680f",
+  "type": "tidbit",
+  "title": "HTML",
+  "tags": ["html", "forms", "jquery"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["ids cannot have spaces in them, jquery wont pick it up"] } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Forms" } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "paragraph", "text": "DO NOT MAKE AN INPUT WITH THE ID OF 'SUBMIT' IT WILL INTERFERE WITH FORM SUBMISSION" } } }
+    ]
+  }
+}

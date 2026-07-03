@@ -1,0 +1,22 @@
+{
+  "id": "76382f44-bf5f-47bb-868d-694a94f758e4",
+  "type": "reference",
+  "title": "FancyBox",
+  "tags": ["fancybox", "javascript", "modal", "jquery"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Resources" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["https://github.com/olsonpm/fancybox", "  might be some useful info in there", "  set the height/width to a custom value and auto for the other", "2019 copy of fancybox documentation (v3)", "  https://web.archive.org/web/20190715003610/http://fancyapps.com/fancybox/3"] } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Notes" } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["When fancybox opens it sets the body's height to auto with a class 'fancybox-active', which overrides the heigh: 100%, ", "  Since html has height 100% and overflow: hidden it doesn't scroll", "  body doesn't have a set height anymore so neither do its children", "  the content wrapper loses its scroll because the body doesn't have it", "  the page moves the viewport up because all the scrolling is gone", "dont use height option on fancybox, set a min height in the popup itself", "cant just have random text anywhere, have to have it wrapped in an element otherwise the height cannot be calculated properly and creates scrolling for > 1 px overflow or something like that", "fancybox doesn't like fully qualified urls for carousel - check InvoiceDetails click on image thumbnails on mobile friendly"] } } },
+      { "id": "b5", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Snippets" } } },
+      { "id": "b6", "content": { "kind": "block", "block": { "type": "table", "columns": [ { "id": "c1", "label": "", "type": "text" }, { "id": "c2", "label": "", "type": "text" } ], "rows": [ { "c1": "parent.$.fancybox.update();", "c2": "use to refresh a fancybox after adding/removing content and make it adjust height to fit" }, { "c1": "parent.$.fancybox.close()", "c2": "close a fancybox while in it" }, { "c1": "return ControllerContext.ClosePopupAndRedirect(URL);", "c2": "close the fancybox and redirect to URL (from controller)" } ] } } }
+    ]
+  }
+}

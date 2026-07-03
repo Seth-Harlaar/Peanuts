@@ -1,0 +1,17 @@
+{
+  "id": "390f5026-877b-4642-971c-be15f1b5efdd",
+  "type": "tidbit",
+  "title": "Programming — General",
+  "tags": ["programming", "syntax", "numbers"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["you can use _ as a comma for number constans in your code (works for most languages) and it will work the same", "  ie 500000 -> 500_000"] } } }
+    ]
+  }
+}

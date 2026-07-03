@@ -1,0 +1,17 @@
+{
+  "id": "029d51c3-8209-4c2a-93ea-0a92db9a94b1",
+  "type": "tidbit",
+  "title": "Lessons Learned",
+  "tags": ["lessons", "files", "assets"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["be careful when changing file names, especially assets", "  search for filename and see if it is imported/referenced anywhere"] } } }
+    ]
+  }
+}
