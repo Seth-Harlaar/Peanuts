@@ -20,7 +20,7 @@ function SearchBar() {
 }
 
 function PageTreeItem({ node }: { node: PageTreeNode }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const hasChildren = node.children.length > 0;
   return (
     <li>
