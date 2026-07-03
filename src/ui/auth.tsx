@@ -42,9 +42,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const signInWithGoogle = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
-      // Return to this app after Google auth. BASE_URL keeps the GitHub Pages
-      // sub-path correct; the PKCE `?code=` is exchanged by detectSessionInUrl.
-      options: { redirectTo: window.location.origin + import.meta.env.BASE_URL },
+      // Return to the current app URL after Google auth. origin + pathname is
+      // correct both locally ("/") and on a GitHub Pages sub-path ("/Peanuts/");
+      // routing lives in the hash, so pathname is stable. The PKCE `?code=` is
+      // exchanged by detectSessionInUrl on return.
+      options: { redirectTo: window.location.origin + window.location.pathname },
     });
     if (error) throw new Error(error.message);
   };
