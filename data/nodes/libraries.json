@@ -1,0 +1,24 @@
+{
+  "id": "f847a8e3-a2bb-4c3f-b426-0070cd60f71d",
+  "type": "reference",
+  "title": "Libraries",
+  "tags": ["javascript", "libraries"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "h", "content": { "kind": "block", "block": { "type": "heading", "level": 1, "text": "JavaScript Libraries" } } },
+      { "id": "intro", "content": { "kind": "block", "block": { "type": "paragraph", "text": "The JavaScript libraries we use. Each library has its own page — this is just the index." } } },
+      { "id": "lib-datatables", "content": { "kind": "node", "nodeId": "8eb533f9-ef65-45f6-bba6-dd5341820669" } },
+      { "id": "lib-fancybox", "content": { "kind": "node", "nodeId": "76382f44-bf5f-47bb-868d-694a94f758e4" } },
+      { "id": "lib-jquery", "content": { "kind": "node", "nodeId": "2edf75b0-d2eb-46a1-82f0-64113833c252" } },
+      { "id": "lib-jquery-ui", "content": { "kind": "node", "nodeId": "a0ec16bf-5cf3-41df-87e9-df0defd7560e" } },
+      { "id": "lib-select2", "content": { "kind": "node", "nodeId": "ac8a40f8-ec03-4e86-90bb-4a278ad8b1b3" } },
+      { "id": "lib-tinymce", "content": { "kind": "node", "nodeId": "3ab0be4c-f50f-46cf-9f70-dfd6c9c00893" } }
+    ]
+  }
+}

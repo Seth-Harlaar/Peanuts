@@ -14,7 +14,8 @@
       { "id": "b1", "content": { "kind": "block", "block": { "type": "paragraph", "text": "[https://legacy.datatables.net/usage/columns.html](https://legacy.datatables.net/usage/columns.html)" } } },
       { "id": "b2", "content": { "kind": "block", "block": { "type": "paragraph", "text": "old:" } } },
       { "id": "b3", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Recover the hidden search term on page load" } } },
-      { "id": "b4", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "// Recover text from table state\nif (this.api() && this.api().state()) {\n    $(\"#DtSearchField\").val(this.api().state().search.search);\n}" } } }
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "// Recover text from table state\nif (this.api() && this.api().state()) {\n    $(\"#DtSearchField\").val(this.api().state().search.search);\n}" } } },
+      { "id": "child-migration", "content": { "kind": "node", "nodeId": "0c966ab1-270a-46b8-8e29-a8ffd357df59" } }
     ]
   }
 }

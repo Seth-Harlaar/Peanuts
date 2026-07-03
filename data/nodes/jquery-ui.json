@@ -12,7 +12,8 @@
     "columns": 12,
     "items": [
       { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "tooltips" } } },
-      { "id": "b2", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["`.tooltip()` of any kind will not work if the element does not have a title attribute"] } } }
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["`.tooltip()` of any kind will not work if the element does not have a title attribute"] } } },
+      { "id": "child-datepickers", "content": { "kind": "node", "nodeId": "84ce2e6a-41f7-4e18-a277-bd51c0812718" } }
     ]
   }
 }
