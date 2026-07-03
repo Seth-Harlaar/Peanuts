@@ -1,0 +1,20 @@
+{
+  "id": "0f01f55f-d34e-4940-a0a6-5bcd3d6e9018",
+  "type": "reference",
+  "title": "Software",
+  "tags": ["software", "tools"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "h", "content": { "kind": "block", "block": { "type": "heading", "level": 1, "text": "Software" } } },
+      { "id": "intro", "content": { "kind": "block", "block": { "type": "paragraph", "text": "Tips for software tools I use." } } },
+      { "id": "app-excel", "content": { "kind": "node", "nodeId": "ce9e61d9-f736-4d3d-a1fc-a3dacc6fa888" } },
+      { "id": "app-chrome-devtools", "content": { "kind": "node", "nodeId": "402a253b-83b0-4ff3-b630-3db52faa03c7" } }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "75a785ec-5dbc-4a04-bc10-dbb6bbb4b714",
+  "type": "reference",
+  "title": "JavaScript",
+  "tags": ["javascript", "fetch", "dom", "dates"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "grid",
+    "columns": 12,
+    "gap": 16,
+    "items": [
+      { "id": "b1", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 1 }, "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["use Fetch API instead of jquery -> much more capability", "  can check if a response has been redirected with response.redirected", "  check for an ok status with response.ok - is equivalent to  400 <= response.status <\t 600", "void html_element_.offsetWidth", "  this line will force the browser to reflow ", "  useful for when changing visibility of elements and animating them right away -> makes sure that everything looks correct", "if ( !($(colHeader).data('col-hidden-default') ?? true )) ", "  checks for empty string -> fails on anything other than \"\""] } } },
+      { "id": "b2", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 2 }, "content": { "kind": "block", "block": { "type": "table", "columns": [ { "id": "c1", "label": "", "type": "text" }, { "id": "c2", "label": "", "type": "text" } ], "rows": [ { "c1": "`$comments.trigger('focus'); $comments[0].setSelectionRange(strLength, strLength);`", "c2": "focus on a text box and move the cursor to a location" } ] } } },
+      { "id": "b3", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 3 }, "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "inputs" } } },
+      { "id": "b4", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 4 }, "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Text input" } } },
+      { "id": "b5", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 5 }, "content": { "kind": "block", "block": { "type": "paragraph", "text": "Debounce:" } } },
+      { "id": "b6", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 6 }, "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "$(\"#text-leads-last-days\").on('keyup', function () {\n    delayfunc(function () {\n        RefreshTable();\n    }, 300);\n});" } } },
+      { "id": "b7", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 7 }, "content": { "kind": "block", "block": { "type": "code", "language": "html", "text": "<button type=\"submit\" onclick=\"submit();\" >Save</button>" } } },
+      { "id": "b8", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 8 }, "content": { "kind": "block", "block": { "type": "paragraph", "text": "using the non declared function `submit()` in the onclick of a button will submit the form that the button is a part of, no matter if the function has a custom declaration or if there are any arguments" } } },
+      { "id": "b9", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 9 }, "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Dates" } } },
+      { "id": "b10", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 10 }, "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["use to convert JS date to our std format:"] } } },
+      { "id": "b11", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 11 }, "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "`${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`" } } },
+      { "id": "b12", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 12 }, "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["use `+new Date()` to get the current time and convert it ms right away"] } } },
+      { "id": "links-libraries", "placement": { "colStart": 9, "colSpan": 4, "rowStart": 1 }, "content": { "kind": "node", "nodeId": "f847a8e3-a2bb-4c3f-b426-0070cd60f71d" } }
+    ]
+  }
+}

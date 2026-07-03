@@ -1,0 +1,26 @@
+{
+  "id": "4e66e177-c541-4e23-a830-430e7f84976a",
+  "type": "reference",
+  "title": "C#",
+  "tags": ["csharp", "datetime", "strings"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "grid",
+    "columns": 12,
+    "gap": 16,
+    "items": [
+      { "id": "b1", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 1 }, "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["replace new lines in text with HTML breaks"] } } },
+      { "id": "b2", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 2 }, "content": { "kind": "block", "block": { "type": "code", "language": "csharp", "text": "string finalEmail = SanitizedEmailBody.Replace(\"\\r\\n\", \"<br>\").Replace(\"\\n\", \"<br>\");" } } },
+      { "id": "b3", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 3 }, "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["you can safely compare a string to null because null is a valid string value"] } } },
+      { "id": "b4", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 4 }, "content": { "kind": "block", "block": { "type": "heading", "level": 2, "text": "Types" } } },
+      { "id": "b5", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 5 }, "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "DateTime" } } },
+      { "id": "b6", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 6 }, "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["DateTimes are immutable, so things like `Date.AddDays(x)` will not modify Date, it has to be reassigned"] } } },
+      { "id": "b7", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 7 }, "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "Display" } } },
+      { "id": "b8", "placement": { "colStart": 1, "colSpan": 8, "rowStart": 8 }, "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["Display date: `.ToString(\"yyyy-MM-dd\")`", "Display time: `.ToString(\"hh:mm tt\")`"] } } },
+      { "id": "links-libraries", "placement": { "colStart": 9, "colSpan": 4, "rowStart": 1 }, "content": { "kind": "node", "nodeId": "ec531982-b0d0-4e27-969a-c1cd471f7b53" } }
+    ]
+  }
+}

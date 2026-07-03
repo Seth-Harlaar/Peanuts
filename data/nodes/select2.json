@@ -1,0 +1,18 @@
+{
+  "id": "ac8a40f8-ec03-4e86-90bb-4a278ad8b1b3",
+  "type": "reference",
+  "title": "Select2",
+  "tags": ["select2", "javascript", "jquery", "ajax"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "$(\".select2\").select2({\n    placeholder: \"-- All --\",\n}).on('close', function () {\n    RefreshTable();\n});" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "$(\".select2-contacts\").select2({\n    ajax: {\n        url: \"/ProjectDatabase/AddressBook/ContactSelect2\",\n        type: 'POST',\n        dataType: 'json',\n        delay: 250,\n        data: function (params) {\n            let postData = {\n                q: params.term\n            };\n\n            // check for optional filter\n            let filterKey = $(this).data('filter-key');\n            let filterValue = $(this).data('filter-value');\n            if (filterKey && filterValue !== undefined) {\n                postData[filterKey] = filterValue;\n            }\n\n            return postData;\n        },\n        cache: false,\n    },\n    placeholder: '--- Select ---',\n    minimumInputLength: 2,\n    width: 'min(260px, 100%)'\n})" } } }
+    ]
+  }
+}

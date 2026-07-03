@@ -1,0 +1,17 @@
+{
+  "id": "402a253b-83b0-4ff3-b630-3db52faa03c7",
+  "type": "tidbit",
+  "title": "Chrome DevTools",
+  "tags": ["chrome-devtools", "debugging", "browser"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "list", "style": "bullet", "items": ["set view to desktop (touch) to get rid of chrome auto zooming on width change", "you can simply paste the id of the element into the console to get a reference to the DOM object it corresponds to"] } } }
+    ]
+  }
+}

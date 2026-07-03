@@ -1,0 +1,20 @@
+{
+  "id": "84ce2e6a-41f7-4e18-a277-bd51c0812718",
+  "type": "reference",
+  "title": "DatePickers",
+  "tags": ["datepicker", "jquery", "javascript"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "normal setup" } } },
+      { "id": "b2", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "var dateFormat = \"yy-mm-dd\";\n$(\".date-picker\").datepicker({\n\tchangeMonth: true,\n\tchangeYear: true,\n\tdateFormat: \"yy-mm-dd\"\n});\n\t" } } },
+      { "id": "b3", "content": { "kind": "block", "block": { "type": "heading", "level": 3, "text": "linked setup" } } },
+      { "id": "b4", "content": { "kind": "block", "block": { "type": "code", "language": "javascript", "text": "var from = $(\"#date-picker-start\")\n\t.datepicker({\n\t\tdateFormat: dateFormat,\n\t}).on(\"change\", function () {\n\t\tto.datepicker(\"option\", \"minDate\", getDate(this));\n\t});\n\nvar to = $(\"#date-picker-end\")\n    .datepicker({\n        dateFormat: dateFormat,\n    })\n    .on(\"change\", function () {\n        from.datepicker(\"option\", \"maxDate\", getDate(this));\n\t});" } } }
+    ]
+  }
+}

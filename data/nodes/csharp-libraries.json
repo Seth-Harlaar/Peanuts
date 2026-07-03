@@ -1,0 +1,20 @@
+{
+  "id": "ec531982-b0d0-4e27-969a-c1cd471f7b53",
+  "type": "reference",
+  "title": "Libraries",
+  "tags": ["csharp", "dotnet", "libraries"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "h", "content": { "kind": "block", "block": { "type": "heading", "level": 1, "text": ".NET Libraries & Packages" } } },
+      { "id": "intro", "content": { "kind": "block", "block": { "type": "paragraph", "text": "C# / .NET libraries and package tooling. Each has its own page — this is just the index." } } },
+      { "id": "lib-dapper", "content": { "kind": "node", "nodeId": "3dbb4b01-9b17-4eba-bc88-082895fabd7e" } },
+      { "id": "lib-nuget", "content": { "kind": "node", "nodeId": "354a62a9-eec4-429d-8420-56e30850f66a" } }
+    ]
+  }
+}

@@ -175,7 +175,6 @@ body {
 .main {
   padding: 2rem 2.5rem;
   overflow-x: hidden;
-  max-width: 900px;
 }
 .page {
   max-width: 100%;

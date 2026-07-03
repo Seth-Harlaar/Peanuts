@@ -1,0 +1,17 @@
+{
+  "id": "ce9e61d9-f736-4d3d-a1fc-a3dacc6fa888",
+  "type": "tidbit",
+  "title": "Excel",
+  "tags": ["excel", "data-import"],
+  "links": [],
+  "created": "2026-07-02T00:00:00Z",
+  "updated": "2026-07-02T00:00:00Z",
+  "body": {
+    "kind": "grid",
+    "mode": "stack",
+    "columns": 12,
+    "items": [
+      { "id": "b1", "content": { "kind": "block", "block": { "type": "paragraph", "text": "Excel can import data directly from a command, just give it connection string and command" } } }
+    ]
+  }
+}
