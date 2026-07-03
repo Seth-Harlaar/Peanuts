@@ -4,6 +4,7 @@ import { ChevronDown, ChevronRight, Home } from "lucide-react";
 import type { PageTreeNode } from "../../app/viewModels";
 import { usePageTree } from "../hooks";
 import { InlineNodeView } from "./InlineNodeView";
+import { AuthControl } from "./AuthControl";
 
 function SearchBar() {
   const [q, setQ] = useState("");
@@ -74,6 +75,8 @@ export function Sidebar() {
           <PageTreeItem key={n.summary.id} node={n} />
         ))}
       </ul>
+
+      <AuthControl />
     </aside>
   );
 }

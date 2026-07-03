@@ -141,10 +141,16 @@ export class ContentService {
 
 /** Write use cases — disabled when the repository is read-only (app spec §3). */
 export class MutationService {
+  // A predicate (not a fixed boolean) so write capability can track live state
+  // such as the current auth session — see src/ui/services.ts.
   constructor(
     private repo: KnowledgeRepository,
-    public readonly canWrite: boolean,
+    private readonly _canWrite: boolean | (() => boolean),
   ) {}
+
+  get canWrite(): boolean {
+    return typeof this._canWrite === "function" ? this._canWrite() : this._canWrite;
+  }
 
   create(node: BaseNode): Promise<void> {
     return this.repo.saveNode(node);
